@@ -1,4 +1,5 @@
 import './Menu.css';
+import { Link } from 'react-router-dom';
 
 const Menu = (props) => {
     return (
@@ -6,10 +7,16 @@ const Menu = (props) => {
             <nav>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/">Sobre</a>
+                        <Link to="/param/1">Param #01</Link>
+                    </li>
+                    <li>
+                        <Link to="/param/2">Param #02</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">Sobre</Link>
                     </li>
                 </ul>
             </nav>
